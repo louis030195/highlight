@@ -198,7 +198,7 @@ impl Highlight {
             tracer,
         }));
 
-        log::set_boxed_logger(Box::new(h.clone())).unwrap();
+        // log::set_boxed_logger(Box::new(h.clone())).unwrap();
         log::set_max_level(log::LevelFilter::Trace);
 
         Ok(h)
